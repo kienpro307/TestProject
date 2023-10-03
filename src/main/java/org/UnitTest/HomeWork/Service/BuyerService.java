@@ -1,9 +1,9 @@
-package org.UnitTest.HomeWork.Week4;
+package org.UnitTest.HomeWork.Service;
 
-import org.UnitTest.HomeWork.Week4.Domain.Buyer;
-import org.UnitTest.HomeWork.Week4.Domain.Promotion;
+import org.UnitTest.HomeWork.Domain.Buyer;
+import org.UnitTest.HomeWork.Domain.Promotion;
 
-public class ServiceWeek4 {
+public class BuyerService {
     Promotion promotion = new Promotion();
     public String getUserSale(Buyer buyer) {
         if (buyer.getPrice() < 0) {

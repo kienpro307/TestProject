@@ -1,11 +1,10 @@
 package org.UnitTest;
-import org.UnitTest.HomeWork.Week4.Domain.Buyer;
-import org.UnitTest.HomeWork.Week4.ServiceWeek4;
+import org.UnitTest.HomeWork.Domain.Buyer;
+import org.UnitTest.HomeWork.Service.BuyerService;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,11 +42,11 @@ public class Main {
     public static void writeOutputFile(String outputFilePath, List<Buyer> buyers) throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath));
 
-        ServiceWeek4 serviceWeek4 = new ServiceWeek4();
+        BuyerService buyerService = new BuyerService();
 
         for (Buyer buyer : buyers) {
             // Gọi phương thức và ghi kết quả vào tệp đầu ra
-            String result = serviceWeek4.getUserSale(buyer);
+            String result = buyerService.getUserSale(buyer);
             writer.write(result);
             writer.newLine();
         }

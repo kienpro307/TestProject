@@ -1,4 +1,4 @@
-package org.UnitTest.HomeWork.Week4.Domain;
+package org.UnitTest.HomeWork.Domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
